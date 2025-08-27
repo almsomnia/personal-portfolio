@@ -14,7 +14,7 @@ export default function LandingHero({ className, id }: Prop) {
       >
          <div className="container">
             <div className="grid grid-cols-1 gap-8 lg:flex lg:items-center">
-               <div className="flex w-7xl flex-col gap-4">
+               <div className="flex flex-2 flex-col gap-4">
                   <div className="flex flex-col gap-2">
                      <h2 className="font-mono text-5xl font-semibold lg:text-6xl">
                         Riva Almero
@@ -35,13 +35,13 @@ export default function LandingHero({ className, id }: Prop) {
                      </button>
                   </div>
                </div>
-               <div className="p-8">
+               <div className="flex-1 p-8">
                   <Image
                      src={ProfilePicture}
-                     objectFit="cover"
                      alt="Profile Picture"
-                     className="h-auto w-full"
+                     className="h-full w-auto object-cover"
                      loading="lazy"
+                     unoptimized
                   />
                </div>
             </div>
