@@ -13,7 +13,7 @@ export default function LandingHero({ className, id }: Prop) {
          id={id}
       >
          <div className="container">
-            <div className="grid grid-cols-1 gap-8 lg:flex lg:items-center">
+            <div className="grid grid-cols-1 gap-8 md:flex md:items-center">
                <div className="flex flex-2 flex-col gap-4">
                   <div className="flex flex-col gap-2">
                      <h2 className="font-mono text-5xl font-semibold lg:text-6xl">
