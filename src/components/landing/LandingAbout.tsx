@@ -1,8 +1,8 @@
 export default function () {
    return (
-      <div className="container">
+      <section className="container">
          <div className="flex flex-col gap-6">
-            <span className="font-mono text-4xl font-semibold">About</span>
+            <h2 className="font-mono text-4xl font-semibold">About</h2>
             <div className="flex flex-col gap-4">
                <p className="leading-relaxed font-light text-pretty">
                   Hi, I'm Riva Almero: a front-end developer, digital tinkerer,
@@ -37,6 +37,6 @@ export default function () {
                </p>
             </div>
          </div>
-      </div>
+      </section>
    )
 }

@@ -62,9 +62,9 @@ export default function () {
    }
 
    return (
-      <div className="container">
+      <section className="container">
          <div className="flex flex-col gap-6">
-            <span className="font-mono text-4xl font-semibold">Experience</span>
+            <h2 className="font-mono text-4xl font-semibold">Experience</h2>
             <div className="flex">
                <div className="flex w-[18rem] shrink-0 flex-col border-s">
                   {experiences.map((exp, index) => (
@@ -91,7 +91,7 @@ export default function () {
                </div>
             </div>
          </div>
-      </div>
+      </section>
    )
 }
 
