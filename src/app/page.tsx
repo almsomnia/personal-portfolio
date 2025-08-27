@@ -1,6 +1,7 @@
 import LandingAbout from "@/components/landing/LandingAbout"
 import LandingExperience from "@/components/landing/LandingExperience"
 import LandingHero from "@/components/landing/LandingHero"
+import LandingSkill from "@/components/landing/LandingSkill"
 
 export default function Home() {
    return (
@@ -13,6 +14,7 @@ export default function Home() {
                <div className="flex flex-col gap-24 py-8">
                   <LandingAbout />
                   <LandingExperience />
+                  <LandingSkill />
                </div>
             </div>
          </div>
