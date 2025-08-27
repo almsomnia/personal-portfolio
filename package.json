@@ -5,19 +5,25 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
-    "start": "next start"
+    "start": "next start",
+    "release:major": "changelog -M && git add CHANGELOG.md && git commit -m 'update CHANGELOG.md' && pnpm version major && git push origin && git push origin --tags",
+    "release:minor": "changelog -m && git add CHANGELOG.md && git commit -m 'update CHANGELOG.md' && pnpm version minor && git push origin && git push origin --tags",
+    "release:patch": "changelog -p && git add CHANGELOG.md && git commit -m 'update CHANGELOG.md' && pnpm version patch && git push origin && git push origin --tags"
   },
   "dependencies": {
+    "next": "15.5.0",
     "react": "19.1.0",
-    "react-dom": "19.1.0",
-    "next": "15.5.0"
+    "react-dom": "19.1.0"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4"
+    "generate-changelog": "^1.8.0",
+    "prettier": "^3.6.2",
+    "prettier-plugin-tailwindcss": "^0.6.14",
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }
