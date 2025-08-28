@@ -1,4 +1,5 @@
 import LandingAbout from "@/components/landing/LandingAbout"
+import LandingContact from "@/components/landing/LandingContact"
 import LandingExperience from "@/components/landing/LandingExperience"
 import LandingHero from "@/components/landing/LandingHero"
 import LandingSkill from "@/components/landing/LandingSkill"
@@ -15,6 +16,7 @@ export default function Home() {
                   <LandingAbout />
                   <LandingExperience />
                   <LandingSkill />
+                  <LandingContact />
                </div>
             </div>
          </div>
