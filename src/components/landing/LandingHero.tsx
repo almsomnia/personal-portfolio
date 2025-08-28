@@ -8,7 +8,7 @@ type Prop = {
 
 export default function LandingHero({ className, id }: Prop) {
    return (
-      <div
+      <section
          className={["pt-36", className].join(" ")}
          id={id}
       >
@@ -30,9 +30,11 @@ export default function LandingHero({ className, id }: Prop) {
                      </p>
                   </div>
                   <div className="">
-                     <button className="cursor-pointer border border-(--foreground) bg-transparent px-10 py-4 font-mono text-sm font-light tracking-wide uppercase">
-                        Reach Out
-                     </button>
+                     <a href="#landing-contact">
+                        <button className="cursor-pointer border border-(--foreground) bg-transparent px-10 py-4 font-mono text-sm font-light tracking-wide uppercase">
+                           Reach Out
+                        </button>
+                     </a>
                   </div>
                </div>
                <div className="flex-1 p-8">
@@ -46,6 +48,6 @@ export default function LandingHero({ className, id }: Prop) {
                </div>
             </div>
          </div>
-      </div>
+      </section>
    )
 }
