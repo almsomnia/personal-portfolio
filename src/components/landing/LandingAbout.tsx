@@ -1,6 +1,6 @@
 export default function () {
    return (
-      <section id="landing-about" className="container">
+      <section id="about" className="container">
          <div className="flex flex-col gap-6">
             <h2 className="font-mono text-4xl font-semibold">About</h2>
             <div className="flex flex-col gap-4">

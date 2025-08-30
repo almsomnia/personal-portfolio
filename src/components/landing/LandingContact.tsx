@@ -2,7 +2,7 @@ import FormContact from "../forms/FormContact"
 
 export default function () {
    return (
-      <section id="landing-contact" className="container">
+      <section id="contact" className="container">
          <div className="flex flex-col gap-6">
             <h2 className="font-mono text-4xl font-semibold">Reach Out</h2>
             <div className="flex flex-col md:flex-row gap-24">

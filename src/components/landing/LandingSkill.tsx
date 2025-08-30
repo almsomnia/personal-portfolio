@@ -35,7 +35,7 @@ export default function () {
    ]
 
    return (
-      <section id="landing-skill" className="container">
+      <section id="skill" className="container">
          <div className="flex flex-col gap-6">
             <h2 className="font-mono text-4xl font-semibold">Skills</h2>
             <div className="flex flex-col gap-4">
