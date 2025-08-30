@@ -3,6 +3,7 @@ import { Analytics } from "@vercel/analytics/next"
 import { Geist, Geist_Mono } from "next/font/google"
 import "../assets/css/globals.css"
 import AppHeader from "@/components/app/AppHeader"
+import AppFooter from "@/components/app/AppFooter"
 
 const geistSans = Geist({
    variable: "--font-geist-sans",
@@ -31,6 +32,7 @@ export default function RootLayout({
          >
             <AppHeader className="fixed top-0 inset-x-0 z-15 bg-white" />
             <main className="font-sans">{children}</main>
+            <AppFooter />
             <Analytics />
          </body>
       </html>
