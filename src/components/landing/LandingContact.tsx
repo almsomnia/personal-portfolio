@@ -1,11 +1,11 @@
-import FormContact from "../forms/FormContact"
+// import FormContact from "../forms/FormContact"
 
 export default function () {
    return (
       <section id="contact" className="container">
          <div className="flex flex-col gap-6">
             <h2 className="font-mono text-4xl font-semibold">Reach Out</h2>
-            <div className="flex flex-col md:flex-row gap-24">
+            <div className="flex flex-col md:flex-row gap-4 md:gap-24">
                <div className="flex-1">
                   <div className="flex flex-col gap-4">
                      <p className="leading-relaxed font-light text-pretty">
@@ -13,10 +13,19 @@ export default function () {
                         something new, or simply say hi, feel free to reach out.
                         My inbox is always open.
                      </p>
-                     <FormContact />
+                     {/* NOTE: disabled until feature implemented */}
+                     {/* <FormContact /> */}
                   </div>
                </div>
                <ul className="ms-4 md:ms-0 list-disc space-y-4 *:font-light *:hover:underline">
+                  <li>
+                     <a
+                        href="mailto:rivaalms@proton.me"
+                        target="_blank"
+                     >
+                        Email
+                     </a>
+                  </li>
                   <li>
                      <a
                         href="https://github.com/almsomnia"
