@@ -9,7 +9,7 @@ export default function ({ className }: Prop) {
    return (
       <header className={className}>
          <div className="container">
-            <div className="flex h-16 items-center justify-between">
+            <div className="flex h-(--header-height) items-center justify-between">
                <div className="">
                   <a href="/">
                      <Image
