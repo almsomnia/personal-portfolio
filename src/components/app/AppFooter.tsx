@@ -4,7 +4,7 @@ export default function () {
    return (
       <footer>
          <div className="container font-sans text-sm font-light text-gray-500">
-            <div className="p-4">
+            <div className="py-4">
                <span>
                   &copy; Copyright {currentYear} &ndash;{" "}
                   <span className="font-medium">Riva Almero</span>

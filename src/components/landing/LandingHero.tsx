@@ -9,11 +9,14 @@ type Prop = {
 export default function LandingHero({ className, id }: Prop) {
    return (
       <section
-         className={["pt-36", className].join(" ")}
+         className={[
+            "h-[calc(100dvh-var(--header-height))-(var(--spacing)*24)] pt-24 md:h-auto md:pt-36",
+            className,
+         ].join(" ")}
          id={id}
       >
          <div className="container">
-            <div className="grid grid-cols-1 gap-8 md:flex md:items-center">
+            <div className="grid grid-cols-1 gap-4 md:flex md:items-center md:gap-8">
                <div className="flex flex-2 flex-col gap-4">
                   <div className="flex flex-col gap-2">
                      <h2 className="font-mono text-5xl font-semibold lg:text-6xl">
@@ -37,13 +40,12 @@ export default function LandingHero({ className, id }: Prop) {
                      </a>
                   </div>
                </div>
-               <div className="flex-1 p-8">
+               <div className="flex-1 p-0 md:p-8">
                   <Image
                      src={ProfilePicture}
                      alt="Profile Picture"
-                     className="h-full w-auto object-cover"
+                     className="object-contain"
                      loading="lazy"
-                     unoptimized
                   />
                </div>
             </div>

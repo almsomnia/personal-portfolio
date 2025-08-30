@@ -3,6 +3,7 @@
 :root {
    --background: #ffffff;
    --foreground: #171717;
+   --header-height: calc(var(--spacing) * 16);
 }
 
 @theme inline {
