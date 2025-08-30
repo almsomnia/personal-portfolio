@@ -141,7 +141,7 @@ function renderExperienceAccordion({
    )
 }
 
-function getExperiences(): Experience[] {
+function getExperiences() {
    return [
       {
          company: "Jasa Medika Transmedic",
@@ -177,29 +177,6 @@ function getExperiences(): Experience[] {
                      Kurento SDK, Jitsi
                   </li>
                </ul>
-            </>
-         ),
-      },
-      {
-         company: "Lorem Ipsum",
-         time: {
-            from: "Jan 2024",
-            to: "Present",
-         },
-         description: (
-            <>
-               <p className="leading-relaxed font-light text-pretty">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-                  quia soluta quod impedit tenetur distinctio nihil, nisi sequi
-                  eum alias quasi voluptatem vero voluptatum, odio quaerat,
-                  ratione ipsam laborum debitis?
-               </p>
-               <p className="leading-relaxed font-light text-pretty">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-                  quia soluta quod impedit tenetur distinctio nihil, nisi sequi
-                  eum alias quasi voluptatem vero voluptatum, odio quaerat,
-                  ratione ipsam laborum debitis?
-               </p>
             </>
          ),
       },
