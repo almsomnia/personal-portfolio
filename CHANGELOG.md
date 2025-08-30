@@ -1,3 +1,14 @@
+### 1.1.0 (2025-08-30)
+
+##### New Features
+
+*  disable contact form, provide email redirect instead (8b2edda6)
+
+##### Bug Fixes
+
+*  header height (1d1fbab1)
+*  image sizing & responsive on mobile devices (aaf36c00)
+
 #### 1.0.1 (2025-08-30)
 
 ##### Bug Fixes
