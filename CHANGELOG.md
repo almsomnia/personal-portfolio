@@ -1,3 +1,11 @@
+#### 1.0.1 (2025-08-30)
+
+##### Bug Fixes
+
+*  `Reach Out` btn not work (1c35e87c)
+*  favicon (de01b868)
+*  delete dummy data from experience (7d12cbff)
+
 ## 1.0.0 (2025-08-30)
 
 ##### New Features
