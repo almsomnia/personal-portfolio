@@ -1,4 +1,5 @@
 import Image from "next/image"
+import AppNavigation from "./AppNavigation"
 
 type Prop = {
    className?: string
@@ -10,53 +11,20 @@ export default function ({ className }: Prop) {
          <div className="container">
             <div className="flex h-16 items-center justify-between">
                <div className="">
-                  <Image
-                     src="/img/logo.svg"
-                     alt="logo"
-                     width={24}
-                     height={24}
-                     className="w-8 h-auto"
-                     loading="lazy"
-                  />
+                  <a href="/">
+                     <Image
+                        src="/img/logo.svg"
+                        alt="logo"
+                        width={24}
+                        height={24}
+                        className="h-auto w-8"
+                        loading="lazy"
+                     />
+                  </a>
                </div>
-               {renderNavigation()}
+               <AppNavigation />
             </div>
          </div>
       </header>
-   )
-}
-
-function renderNavigation() {
-   const navItems = [
-      {
-         label: "About",
-         location: "#about",
-      },
-      {
-         label: "Experience",
-         location: "#experience",
-      },
-      {
-         label: "Skills",
-         location: "#skill",
-      },
-      {
-         label: "Reach Out",
-         location: "#contact",
-      },
-   ]
-
-   return (
-      <nav className="flex items-center gap-6">
-         {navItems.map((item, index) => (
-            <a
-               key={index}
-               href={item.location}
-               className="font-mono hover:underline"
-            >
-               {item.label}
-            </a>
-         ))}
-      </nav>
    )
 }
