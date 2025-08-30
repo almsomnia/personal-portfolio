@@ -30,7 +30,7 @@ export default function LandingHero({ className, id }: Prop) {
                      </p>
                   </div>
                   <div className="">
-                     <a href="#landing-contact">
+                     <a href="#contact">
                         <button className="cursor-pointer border border-(--foreground) bg-transparent px-10 py-4 font-mono text-sm font-light tracking-wide uppercase">
                            Reach Out
                         </button>
