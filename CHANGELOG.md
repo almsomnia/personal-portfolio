@@ -1,3 +1,28 @@
+## 1.0.0 (2025-08-30)
+
+##### New Features
+
+*  footer (1e00c11e)
+*  header responsiveness (993e9908)
+*  experience section responsive (dae55e6d)
+*  header (52e6481c)
+*  section scroll margin (eefd9a30)
+*  landing contact (4ac50612)
+*  landing skill (77f4ab34)
+
+##### Bug Fixes
+
+*  optimize responsiveness on contact section (4e9fdaa0)
+*  vercel analytics tag position (24efe6e7)
+*  html meta (1268cba2)
+*  hero layout breakpoint (997ccd18)
+
+##### Refactors
+
+*  section ID (a3458b87)
+*  section id & `Reach Out` button functionality (99e4eac4)
+*  optimize profile img (31603df0)
+
 ### 0.2.0 (2025-08-27)
 
 ##### New Features
