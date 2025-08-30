@@ -12,7 +12,7 @@ export default function Home() {
                <LandingHero className="h-full w-full" />
             </div>
             <div className="relative z-10 mt-24 bg-(--background)">
-               <div className="flex flex-col gap-24 py-8">
+               <div className="flex flex-col gap-24 py-8 *:scroll-mt-16">
                   <LandingAbout />
                   <LandingExperience />
                   <LandingSkill />
