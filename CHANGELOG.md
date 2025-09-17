@@ -1,3 +1,17 @@
+### 1.2.0 (2025-09-17)
+
+##### Chores
+
+*  add vercel speed insights (91c35903)
+
+##### New Features
+
+*  direct email from contact form (806e16e2)
+
+##### Bug Fixes
+
+*  remove sticky hero section (d9f320cd)
+
 ### 1.1.0 (2025-08-30)
 
 ##### New Features
