@@ -10,7 +10,7 @@ export default function LandingHero({ className, id }: Prop) {
    return (
       <section
          className={[
-            "h-[calc(100dvh-var(--header-height))-(var(--spacing)*24)] pt-24 md:h-auto md:pt-36",
+            "h-[calc(100vh-var(--header-height))-(var(--spacing)*24)] pt-24 md:h-auto md:pt-36",
             className,
          ].join(" ")}
          id={id}

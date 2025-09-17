@@ -8,7 +8,7 @@ import { getNavigations } from "@/libs/helpers/navigation"
 export default function () {
    const navItems = getNavigations()
 
-   const [viewportWidth, setViewportWidth] = useState(0)
+   const [viewportWidth, setViewportWidth] = useState(768)
 
    useEffect(() => {
       const handleResize = () => setViewportWidth(window.innerWidth)

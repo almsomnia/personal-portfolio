@@ -8,8 +8,8 @@ export default function Home() {
    return (
       <>
          <div className="relative">
-            <div className="sticky top-0 z-0 bg-white">
-               <LandingHero className="h-full w-full" />
+            <div className="z-0 bg-white">
+               <LandingHero />
             </div>
             <div className="relative z-10 mt-24 bg-(--background)">
                <div className="flex flex-col gap-24 py-8 *:scroll-mt-16">

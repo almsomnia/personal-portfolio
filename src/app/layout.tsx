@@ -26,13 +26,18 @@ export default function RootLayout({
    children: React.ReactNode
 }>) {
    return (
-      <html lang="en" className="scroll-smooth">
+      <html
+         lang="en"
+         className="scroll-smooth"
+      >
          <body
             className={`${geistSans.variable} ${geistMono.variable} antialiased`}
          >
-            <AppHeader className="fixed top-0 inset-x-0 z-15 bg-white" />
-            <main className="font-sans">{children}</main>
-            <AppFooter />
+            <div className="min-h-dvh">
+               <AppHeader className="fixed inset-x-0 top-0 z-15 bg-white" />
+               <main className="font-sans">{children}</main>
+               <AppFooter />
+            </div>
             <Analytics />
          </body>
       </html>
