@@ -1,4 +1,4 @@
-// import FormContact from "../forms/FormContact"
+import FormContact from "../forms/FormContact"
 
 export default function () {
    return (
@@ -13,8 +13,7 @@ export default function () {
                         something new, or simply say hi, feel free to reach out.
                         My inbox is always open.
                      </p>
-                     {/* NOTE: disabled until feature implemented */}
-                     {/* <FormContact /> */}
+                     <FormContact />
                   </div>
                </div>
                <ul className="ms-4 md:ms-0 list-disc space-y-4 *:font-light *:hover:underline">
