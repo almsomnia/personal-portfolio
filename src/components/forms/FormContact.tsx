@@ -4,6 +4,9 @@ import { FormEvent, useState, useEffect } from "react"
 import AlertTriangle from "../icons/AlertTriangle"
 import CheckCircle from "../icons/CheckCircle"
 import Loader from "../icons/Loader"
+import Input from "../base/Input"
+import Textarea from "../base/Textarea"
+import Button from "../base/Button"
 
 export default function () {
    const [loading, setLoading] = useState(false)
@@ -49,46 +52,37 @@ export default function () {
             className="grid grid-cols-1 gap-4 md:grid-cols-2"
             onSubmit={onSubmit}
          >
-            <input
+            <Input
                type="text"
                name="name"
                placeholder="Name"
-               className="bg-background border border-(--foreground) px-4 py-2.5 font-sans font-light focus:outline-none active:outline-0"
                required
             />
-            <input
+            <Input
                type="email"
                name="email"
                placeholder="Email"
-               className="bg-background border border-(--foreground) px-4 py-2.5 font-sans font-light focus:outline-none active:outline-0"
                required
             />
-            <input
+            <Input
                type="text"
                name="subject"
+               className="col-span-full"
                placeholder="Subject"
-               className="bg-background col-span-full border border-(--foreground) px-4 py-2.5 font-sans font-light focus:outline-none active:outline-0"
                required
             />
-            <textarea
+            <Textarea
                name="message"
                placeholder="Message"
-               className="bg-background col-span-full border border-(--foreground) px-4 py-2.5 font-sans font-light focus:outline-none active:outline-0"
                rows={5}
                required
             />
             <div className="col-span-full flex items-center justify-end">
-               <button
+               <Button
                   type="submit"
-                  className="bg-foreground disabled:bg-foreground/60 text-background cursor-pointer border border-(--foreground) px-10 py-4 font-mono text-sm tracking-wide uppercase disabled:cursor-not-allowed aria-busy:cursor-progress"
-                  aria-busy={loading}
-               >
-                  {loading ? (
-                     <Loader className="motion-safe:animate-[spin_2s_linear_infinite]" />
-                  ) : (
-                     "Send Message"
-                  )}
-               </button>
+                  loading={loading}
+                  label="Send Message"
+               />
             </div>
          </form>
       </div>
