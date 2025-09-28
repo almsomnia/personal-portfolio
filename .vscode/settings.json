@@ -1,0 +1,6 @@
+{
+   "tailwindCSS.experimental.classRegex": [
+      "@tw\\s\\*\/\\s+[\"'`]([^\"'`]*)",
+      ["(?:twMerge|twJoin)\\(([^;]*)[\\);]", "[`'\"`]([^'\"`;]*)[`'\"`]"]
+   ]
+}
