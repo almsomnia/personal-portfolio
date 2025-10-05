@@ -7,10 +7,11 @@ export async function POST(req: Request) {
 
       const transporter = useMailer()
       await transporter.sendMail({
-         from: `"${name}" <${email}>`,
+         from: name,
          to: process.env.EMAIL_TARGET,
          subject: subject,
-         text: `${message}\n\Sent from Riva Almero Personal Portfolio`
+         text: `${message}\n\Sent from Riva Almero Personal Portfolio`,
+         replyTo: email
       })
 
       return NextResponse.json({ ok: true })
