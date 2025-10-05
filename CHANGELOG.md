@@ -1,3 +1,9 @@
+#### 1.2.1 (2025-10-05)
+
+##### Other Changes
+
+*  email replyTo handler (bf90bc9d)
+
 ### 1.2.0 (2025-09-17)
 
 ##### Chores
